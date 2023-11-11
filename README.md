@@ -7,7 +7,7 @@
 - 2 Abrir en VSCode
 - 3 abrir una terminal de comandos sobre el proyecto y ejecutar el comando npm i para que se instalen los paquetes requeridos
 - 4 ejecutar el comando npm start
-- 5 ejecutar en postman o aguna herramienta de pruebas de APIS los endpoints en el siguiente orden
+- 5 ejecutar en postman o aguna herramienta de pruebas de APIS los endpoints en el siguiente orden:
      - setTraining#1
      - setTraining#2
      - setTraining#3
