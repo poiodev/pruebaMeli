@@ -8,10 +8,10 @@
 - 3 abrir una terminal de comandos sobre el proyecto y ejecutar el comando npm i para que se instalen los paquetes requeridos
 - 4 ejecutar el comando npm start
 - 5 ejecutar en postman o aguna herramienta de pruebas de APIS los endpoints en el siguiente orden
-    1 - setTraining#1
-    2 - setTraining#2
-    3 - setTraining#3
-    4 - getStartingTeam
+     - setTraining#1
+     - setTraining#2
+     - setTraining#3
+     - getStartingTeam
     (NOTA) - los datos estan en el archivo PruebaMeli.postman_Collection se pueden importar a postman para solo ejecutar o ver los json para cada el body en esta url
     https://github.com/poiodev/pruebaMeli/blob/main/PruebaMeli.postman_collection.json
 
