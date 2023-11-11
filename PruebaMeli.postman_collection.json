@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "9d55f3fd-2b5c-4c5d-9e00-7feb444d9110",
+		"name": "PruebaMeli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17896749"
+	},
+	"item": [
+		{
+			"name": "getStaringTeam",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3023/api/team/starting-team",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3023",
+					"path": [
+						"api",
+						"team",
+						"starting-team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setTrainign#1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"training\": 1,\r\n    \"players\": [\r\n        {\r\n            \"name\": \"Poio\",\r\n            \"shootingPower_km_h\": 10,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 25\r\n        },\r\n        {\r\n            \"name\": \"Caos\",\r\n            \"shootingPower_km_h\": 16,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 20\r\n        },\r\n        {\r\n            \"name\": \"Luffy\",\r\n            \"shootingPower_km_h\": 15,\r\n            \"speed_km_h\": 3,\r\n            \"passes\": 30\r\n        },\r\n        {\r\n            \"name\": \"Nami\",\r\n            \"shootingPower_km_h\": 12,\r\n            \"speed_km_h\": 4,\r\n            \"passes\": 18\r\n        },\r\n        {\r\n            \"name\": \"Boggy\",\r\n            \"shootingPower_km_h\": 11,\r\n            \"speed_km_h\": 3,\r\n            \"passes\": 19\r\n        },\r\n        {\r\n            \"name\": \"Zoro\",\r\n            \"shootingPower_km_h\": 9,\r\n            \"speed_km_h\": 3,\r\n            \"passes\": 22\r\n        },\r\n        {\r\n            \"name\": \"Ace\",\r\n            \"shootingPower_km_h\": 10,\r\n            \"speed_km_h\": 2,\r\n            \"passes\": 24\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3023/api/team/training",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3023",
+					"path": [
+						"api",
+						"team",
+						"training"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setTraining#2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"training\": 2,\r\n    \"players\": [\r\n        {\r\n            \"name\": \"Poio\",\r\n            \"shootingPower_km_h\": 8,\r\n            \"speed_km_h\": 4,\r\n            \"passes\": 15\r\n        },\r\n        {\r\n            \"name\": \"Caos\",\r\n            \"shootingPower_km_h\": 12,\r\n            \"speed_km_h\": 6,\r\n            \"passes\": 10\r\n        },\r\n        {\r\n            \"name\": \"Luffy\",\r\n            \"shootingPower_km_h\": 14,\r\n            \"speed_km_h\": 7,\r\n            \"passes\": 20\r\n        },\r\n        {\r\n            \"name\": \"Nami\",\r\n            \"shootingPower_km_h\": 10,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 12\r\n        },\r\n        {\r\n            \"name\": \"Boggy\",\r\n            \"shootingPower_km_h\": 9,\r\n            \"speed_km_h\": 4,\r\n            \"passes\": 13\r\n        },\r\n        {\r\n            \"name\": \"Zoro\",\r\n            \"shootingPower_km_h\": 7,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 15\r\n        },\r\n        {\r\n            \"name\": \"Ace\",\r\n            \"shootingPower_km_h\": 8,\r\n            \"speed_km_h\": 3,\r\n            \"passes\": 16\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3023/api/team/training",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3023",
+					"path": [
+						"api",
+						"team",
+						"training"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setTraining#3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"training\": 3,\r\n    \"players\": [\r\n        {\r\n            \"name\": \"Poio\",\r\n            \"shootingPower_km_h\": 12,\r\n            \"speed_km_h\": 6,\r\n            \"passes\": 30\r\n        },\r\n        {\r\n            \"name\": \"Caos\",\r\n            \"shootingPower_km_h\": 18,\r\n            \"speed_km_h\": 7,\r\n            \"passes\": 25\r\n        },\r\n        {\r\n            \"name\": \"Luffy\",\r\n            \"shootingPower_km_h\": 16,\r\n            \"speed_km_h\": 8,\r\n            \"passes\": 35\r\n        },\r\n        {\r\n            \"name\": \"Nami\",\r\n            \"shootingPower_km_h\": 14,\r\n            \"speed_km_h\": 6,\r\n            \"passes\": 20\r\n        },\r\n        {\r\n            \"name\": \"Boggy\",\r\n            \"shootingPower_km_h\": 13,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 21\r\n        },\r\n        {\r\n            \"name\": \"Zoro\",\r\n            \"shootingPower_km_h\": 6,\r\n            \"speed_km_h\": 5,\r\n            \"passes\": 30\r\n        },\r\n        {\r\n            \"name\": \"Ace\",\r\n            \"shootingPower_km_h\": 7,\r\n            \"speed_km_h\": 1,\r\n            \"passes\": 2\r\n        }\r\n    ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3023/api/team/training",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3023",
+					"path": [
+						"api",
+						"team",
+						"training"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -2,11 +2,19 @@ let trainings = [];
 console.log(trainings);
 
 const setTraining = async (req, res) => {
-  const training = req.body;
-  trainings.push(training);
-  console.log(trainings);
+  const sessionTraining = req.body;
+
+  const isRepeated = validateTraining(sessionTraining);
+  console.log(isRepeated);
+  if (isRepeated) {
+    return res.status(400).json({
+      message: `El entrenamienro #${sessionTraining.training} ya fue realizaso por el equipo`,
+    });
+  }
+
+  trainings.push(sessionTraining);
   return res.status(200).json({
-    message: `Se registro el entrenamiento ${training.training} exitosamente`,
+    message: `Se registro el entrenamiento ${sessionTraining.training} exitosamente`,
   });
 };
 
@@ -17,6 +25,26 @@ const getStartingTeam = async (req, res) => {
       .json({ message: "No hay suficiente información de entrenamientos" });
   }
 
+  const results = selectPlayers();
+
+  results.sort((a, b) => b.result - a.result);
+  const finalTeam = results.slice(0, 5);
+
+  res.status(200).json({ finalTeam });
+};
+
+const validateTraining = (sessionTraining) => {
+  let isRepeated = false;
+  trainings.forEach((t) => {
+    if (t.training === sessionTraining.training) {
+      console.log("entro");
+      return (isRepeated = true);
+    }
+  });
+  return isRepeated;
+};
+
+const selectPlayers = () => {
   let results = [];
 
   for (let i = 0; i < trainings[0].players.length; i++) {
@@ -29,11 +57,7 @@ const getStartingTeam = async (req, res) => {
     results.push({ player: player.name, result });
   }
 
-  results.sort((a, b) => b.result - a.result);
-
-  const finalTeam = results.slice(0, 5);
-
-  res.status(200).json({ finalTeam });
+  return results;
 };
 
 export default { setTraining, getStartingTeam };

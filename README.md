@@ -10,6 +10,10 @@
 
 * arquitectura por capas 
 
+* separacion de dependencias
+
+* validaciones
+
 ## Como se resolvio el reto, paso a paso
 
 - Se crea el proyecto con el comando  
@@ -100,11 +104,6 @@ export default router;
 ```
 
 - Se crea el controller par amanejar la logica de negocio para los entrenamientos y obtener el equipo titular
-
-
-```
-
-```
 
 
 
