@@ -8,6 +8,8 @@
 
 * uso de variables de entorno
 
+* arquitectura por capas 
+
 ## Como se resolvio el reto, paso a paso
 
 - Se crea el proyecto con el comando  
@@ -82,9 +84,27 @@ app.listen(PORT, () => {
 });
 ```
 
+- Se crea una ruta de carpetas usando arquitectura por capas  para separar la logica de negocio como las rutas y el controller
+
+- dentro del archivo /routes/team.js se crea el codigo de los servicios get y post para los entrenamientos y para obtener el equipo titular
+
+```
+import express from "express";
+import teamController from "../controller/team.js";
+const router = express.Router();
+
+router.post("/training", teamController.setTraining);
+router.get("/starting-team", teamController.getStartingTeam);
+
+export default router;
+```
+
+- Se crea el controller par amanejar la logica de negocio para los entrenamientos y obtener el equipo titular
 
 
+```
 
+```
 
 
 
