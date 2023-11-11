@@ -1,11 +1,9 @@
 let trainings = [];
-console.log(trainings);
 
 const setTraining = async (req, res) => {
   const sessionTraining = req.body;
 
   const isRepeated = validateTraining(sessionTraining);
-  console.log(isRepeated);
   if (isRepeated) {
     return res.status(400).json({
       message: `El entrenamienro #${sessionTraining.training} ya fue realizaso por el equipo`,
@@ -37,7 +35,6 @@ const validateTraining = (sessionTraining) => {
   let isRepeated = false;
   trainings.forEach((t) => {
     if (t.training === sessionTraining.training) {
-      console.log("entro");
       return (isRepeated = true);
     }
   });

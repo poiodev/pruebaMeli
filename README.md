@@ -1,18 +1,36 @@
 # pruebaMeli
 
+
+## Como ejecutar
+
+1 - realizar un git clone al proyecto, o descargar el zip y descomprimir
+2 - Abrir en VSCode
+3 - abrir una terminal de comandos sobre el proyecto y ejecutar el comando npm i para que se instalen los paquetes requeridos
+4 - ejecutar el comando npm start
+5 - ejecutar en postman o aguna herramienta de pruebas de APIS los endpoints en el siguiente orden
+    1 - setTraining#1
+    2 - setTraining#2
+    3 - setTraining#3
+    4 - getStartingTeam
+    (NOTA) - los datos estan en el archivo PruebaMeli.postman_Collection se pueden importar a postman para solo ejecutar o ver los json para cada el body en esta url
+    https://github.com/poiodev/pruebaMeli/blob/main/PruebaMeli.postman_collection.json
+
+
 ## Buenas practicas y estandares utilizados
 
 * se usa const y se evita el uso de let para mayor seguridad en variables donde su scope no va cambiar
 
-* se usa module en vez de commonjs 
+* se usa module en vez de commonjs por mejores practicas de accesibilidad y optimizacion de recursos
 
 * uso de variables de entorno
 
-* arquitectura por capas 
+* arquitectura por capas para futura escalabilidad del proyecto y legibilidad
 
-* separacion de dependencias
+* separacion de dependencias con funciones individuales para cada tarea especifica apuntando al uso de principios SOLID
 
-* validaciones
+* validaciones de datos para no tener errores o calapsos en la aplicacion por uso erroneo
+
+* no se uso try catch porque todos los errores del codigo son controlabes con validaciones al saber que error espesifico generan
 
 ## Como se resolvio el reto, paso a paso
 
